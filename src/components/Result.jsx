@@ -1,4 +1,4 @@
-function Result({ correct, questions }) {
+const Result = ({ correct, questions }) => {
   return (
     <div className="result">
       <img
@@ -13,6 +13,6 @@ function Result({ correct, questions }) {
       </a>
     </div>
   );
-}
+};
 
 export default Result;
