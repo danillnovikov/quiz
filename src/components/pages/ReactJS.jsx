@@ -1,6 +1,6 @@
 import Game from '../Game';
 import Result from '../Result';
-import { questions } from '../../questions/questions';
+import { questions } from '../../questions';
 import { useState } from 'react';
 
 const ReactJS = () => {
