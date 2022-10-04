@@ -1,4 +1,6 @@
-const Result = ({ correct, questions }) => {
+import { Link } from 'react-router-dom';
+
+const Result = ({ correct, ques }) => {
   return (
     <div className="result">
       <img
@@ -6,11 +8,11 @@ const Result = ({ correct, questions }) => {
         alt="img"
       />
       <h2>
-        Вы отгадали {correct} ответа из {questions.length}
+        Вы отгадали {correct} ответа из {ques.length}
       </h2>
-      <a href="/">
-        <button>Попробовать снова</button>
-      </a>
+      <Link to="/react">
+        <button>На главную</button>
+      </Link>
     </div>
   );
 };

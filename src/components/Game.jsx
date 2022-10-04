@@ -1,6 +1,5 @@
-const Game = ({ question, onClickVariant, step, questions }) => {
-  const percentage = Math.round((step / questions.length) * 100);
-
+const Game = ({ question, onClickVariant, step, ques }) => {
+  const percentage = Math.round((step / ques.length) * 100);
   return (
     <>
       <div className="progress">
@@ -13,7 +12,7 @@ const Game = ({ question, onClickVariant, step, questions }) => {
       <h1>{question.title} </h1>
 
       <ul>
-        {question.aswers.map((text, index) => {
+        {question.answers.map((text, index) => {
           return (
             <li onClick={() => onClickVariant(index)} key={text}>
               {text}
