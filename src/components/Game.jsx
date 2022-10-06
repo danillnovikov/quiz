@@ -1,5 +1,7 @@
 const Game = ({ question, onClickVariant, step, ques }) => {
   const percentage = Math.round((step / ques.length) * 100);
+  // console.log(question);
+
   return (
     <>
       <div className="progress">

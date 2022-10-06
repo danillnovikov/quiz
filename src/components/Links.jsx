@@ -1,22 +1,21 @@
-import React from 'react';
+import { questions } from '../questions';
 import { Link } from 'react-router-dom';
 
 const Links = () => {
   return (
     <>
       <nav className="links">
-        <Link to="/react" className="link">
-          React
-        </Link>
-        <Link to="/javascript" className="link">
-          JavaScript
-        </Link>
-        <Link to="/html" className="link">
-          HTML
-        </Link>
-        <Link to="/css" className="link">
-          CSS
-        </Link>
+        {questions.map((item) => {
+          return (
+            <Link
+              to={item.technology.toLowerCase()}
+              key={item.id}
+              className="link"
+            >
+              {item.technology}
+            </Link>
+          );
+        })}
       </nav>
     </>
   );

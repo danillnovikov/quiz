@@ -1,6 +1,7 @@
 export const questions = [
   {
-    language: 'React',
+    id: 1,
+    technology: 'React',
     properties: [
       {
         title: 'React - это ...? ',
@@ -28,7 +29,8 @@ export const questions = [
     ],
   },
   {
-    language: 'JavaScript',
+    id: 2,
+    technology: 'JavaScript',
     properties: [
       {
         title: 'Количество типов данных в JavaScript? ',
@@ -56,7 +58,8 @@ export const questions = [
     ],
   },
   {
-    language: 'CSS',
+    id: 3,
+    technology: 'CSS',
     properties: [
       {
         title: 'Для чего используется CSS?',
@@ -84,7 +87,8 @@ export const questions = [
     ],
   },
   {
-    language: 'HTML',
+    id: 4,
+    technology: 'HTML',
     properties: [
       {
         title: 'HTML - это ...?',
