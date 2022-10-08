@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-const Result = ({ correct, ques }) => {
+const Result = ({ ques }) => {
+  const { correct } = useSelector((store) => store);
+
   return (
     <div className="result">
       <img
@@ -8,10 +11,10 @@ const Result = ({ correct, ques }) => {
         alt="img"
       />
       <h2>
-        Вы отгадали {correct} ответа из {ques.length}
+        Вы отгадали {correct} из {ques.length}
       </h2>
       <Link to="/react">
-        <button>На главную</button>
+        <button>Смотреть результаты</button>
       </Link>
     </div>
   );

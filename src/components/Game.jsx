@@ -1,6 +1,8 @@
-const Game = ({ question, onClickVariant, step, ques }) => {
+import { useSelector } from 'react-redux';
+
+const Game = ({ question, onClickVariant, ques }) => {
+  const { step } = useSelector((store) => store);
   const percentage = Math.round((step / ques.length) * 100);
-  // console.log(question);
 
   return (
     <>

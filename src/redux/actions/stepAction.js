@@ -1,4 +1,4 @@
-const SET_STEP = 'SET_STEP';
+import { SET_STEP } from './actionTypes';
 
 export const setStep = (data) => {
   return {
